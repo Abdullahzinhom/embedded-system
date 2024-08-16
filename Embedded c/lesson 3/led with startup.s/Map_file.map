@@ -1,0 +1,99 @@
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+flash            0x08000000         0x00020000         xr
+sram             0x20000000         0x00005000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+
+.text           0x08000000      0x120
+ *(.vectors*)
+ .vectors       0x08000000       0x50 startup.o
+ *(.text*)
+ .text          0x08000050        0x8 startup.o
+ .text          0x08000058       0xc8 led.o
+                0x08000058                wait
+                0x08000084                main
+ *(.rodata*)
+
+.glue_7         0x08000120        0x0
+ .glue_7        0x00000000        0x0 linker stubs
+
+.glue_7t        0x08000120        0x0
+ .glue_7t       0x00000000        0x0 linker stubs
+
+.vfp11_veneer   0x08000120        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x08000120        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.iplt           0x08000120        0x0
+ .iplt          0x00000000        0x0 startup.o
+
+.rel.dyn        0x08000120        0x0
+ .rel.iplt      0x00000000        0x0 startup.o
+
+.data           0x08000120       0x24
+                0x08000120                . = ALIGN (0x4)
+ *(.data*)
+ .data          0x08000120        0x0 startup.o
+ .data          0x08000120       0x24 led.o
+                0x08000120                p_GPIO_CRH
+                0x08000124                p_GPIO_ODR
+                0x08000128                fran
+                0x08000134                gang
+
+.igot.plt       0x08000144        0x0
+ .igot.plt      0x00000000        0x0 startup.o
+
+.bss            0x20000000        0x0
+ *(.bss*)
+ .bss           0x20000000        0x0 startup.o
+ .bss           0x20000000        0x0 led.o
+                0x20000000                _E_bss = .
+LOAD startup.o
+LOAD led.o
+OUTPUT(learn-in-depth.elf elf32-littlearm)
+
+.ARM.attributes
+                0x00000000       0x2f
+ .ARM.attributes
+                0x00000000       0x21 startup.o
+ .ARM.attributes
+                0x00000021       0x33 led.o
+
+.comment        0x00000000       0x11
+ .comment       0x00000000       0x11 led.o
+                                 0x12 (size before relaxing)
+
+.debug_line     0x00000000       0x9d
+ .debug_line    0x00000000       0x3b startup.o
+ .debug_line    0x0000003b       0x62 led.o
+
+.debug_info     0x00000000      0x2d2
+ .debug_info    0x00000000       0x62 startup.o
+ .debug_info    0x00000062      0x270 led.o
+
+.debug_abbrev   0x00000000      0x109
+ .debug_abbrev  0x00000000       0x14 startup.o
+ .debug_abbrev  0x00000014       0xf5 led.o
+
+.debug_aranges  0x00000000       0x40
+ .debug_aranges
+                0x00000000       0x20 startup.o
+ .debug_aranges
+                0x00000020       0x20 led.o
+
+.debug_loc      0x00000000       0x64
+ .debug_loc     0x00000000       0x64 led.o
+
+.debug_str      0x00000000      0x139
+ .debug_str     0x00000000      0x139 led.o
+                                0x172 (size before relaxing)
+
+.debug_frame    0x00000000       0x48
+ .debug_frame   0x00000000       0x48 led.o
