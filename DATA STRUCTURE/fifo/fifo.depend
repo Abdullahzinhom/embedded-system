@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1725821232 source:d:\embedded\embedded_system_assi\data structure\fifo\fifo.c
+	"fifo.h"
+	"stdio.h"
+
+1725821477 d:\embedded\embedded_system_assi\data structure\fifo\fifo.h
+
+1725821497 source:d:\embedded\embedded_system_assi\data structure\fifo\main.c
+	"stdio.h"
+	"fifo.h"
+

@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1725801189 source:d:\embedded\labs\lifo\lifo\uart.c
+	"uart.h"
+	"stdio.h"
+
+1725375213 d:\embedded\labs\lifo\lifo\uart.h
+
+1725801143 source:d:\embedded\labs\lifo\lifo\main.c
+	<stdio.h>
+	"uart.h"
+
