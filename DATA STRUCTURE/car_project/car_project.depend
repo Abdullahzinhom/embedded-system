@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1726502298 source:d:\embedded\labs\structure\car_project\ca.c
+	"ca.h"
+	"status.h"
+	"stdio.h"
+
+1726502299 source:d:\embedded\labs\structure\car_project\motor.c
+	"motor.h"
+	"status.h"
+	"stdio.h"
+
+1726502675 source:d:\embedded\labs\structure\car_project\main.c
+	"us.h"
+	"motor.h"
+	"ca.h"
+	"stdio.h"
+	"status.h"
+
+1726502713 source:d:\embedded\labs\structure\car_project\us.c
+	"us.h"
+	"stdio.h"
+	"status.h"
+
+1726489862 d:\embedded\labs\structure\car_project\us.h
+
+1726500597 d:\embedded\labs\structure\car_project\status.h
+
+1726500597 d:\embedded\labs\structure\car_project\ca.h
+
+1726501968 d:\embedded\labs\structure\car_project\motor.h
+
