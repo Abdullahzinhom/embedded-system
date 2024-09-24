@@ -1,0 +1,39 @@
+# depslib dependency file v1.0
+1726919317 source:d:\embedded\labs\structure\pressure detection\driver.c
+	"driver.h"
+	<stdint.h>
+	<stdio.h>
+
+1726919317 d:\embedded\labs\structure\pressure detection\driver.h
+	<stdint.h>
+	<stdio.h>
+
+1726919327 source:d:\embedded\labs\structure\pressure detection\main.c
+	<stdint.h>
+	<stdio.h>
+	"driver.h"
+
+1726953977 source:d:\embedded\project 1st term\code\pressure detection\main.c
+	<stdint.h>
+	<stdio.h>
+	"driver.h"
+	"checkpressure.h"
+
+1726924934 d:\embedded\project 1st term\code\pressure detection\driver.h
+	<stdint.h>
+	<stdio.h>
+	<time.h>
+	<stdlib.h>
+
+1726953827 source:d:\embedded\project 1st term\code\pressure detection\checkpressure.c
+	"driver.h"
+	"stdio.h"
+	"checkpressure.h"
+
+1726953785 d:\embedded\project 1st term\code\pressure detection\checkpressure.h
+
+1726953785 source:d:\embedded\project 1st term\code\pressure detection\driver.c
+	"driver.h"
+	<stdint.h>
+	<stdio.h>
+
