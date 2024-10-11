@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1728251112 source:d:\embedded\labs\structure\2nd project\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1728251486 source:d:\embedded\labs\structure\2nd project\header.c
+	"headers.h"
+	"stdio.h"
+	"stdlib.h"
+
+1728251533 d:\embedded\labs\structure\2nd project\headers.h
+
+1728659227 source:d:\embedded\project first term 2nd\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1728659157 source:d:\embedded\project first term 2nd\header.c
+	"headers.h"
+	"stdio.h"
+	"stdlib.h"
+
+1728466280 d:\embedded\project first term 2nd\headers.h
+
